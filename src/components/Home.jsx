@@ -1,17 +1,26 @@
 import React from 'react'
 import './Home.css'
 import Logo from '../assets/Logo.svg'
+import Community from '../assets/comm.svg'
 const Home = () => {
   return (
     <div className="main">
-      <div className="card">
-        <div className="image flex justify-center py-10">
-            <img src={Logo} className="object-contain w-1/2"/>
+      <div className="community">
+        {/* <img src={Community}/> */}
+        <div className="animation">
+          <div class="loader">
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          </div>
         </div>
-        <div className="text flex justify-center">
-         <h1 className="text-white">Buildinect</h1>
-        </div>
+        <h1>Join the community</h1>
       </div>
+      
     </div>
   )
 }
