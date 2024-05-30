@@ -169,3 +169,18 @@
    .loader-square:nth-of-type(7) {
     animation-delay: -10s;
    }
+
+.cards{
+    margin-top: 10px;
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+.row{
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
