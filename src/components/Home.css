@@ -1,11 +1,11 @@
-*{
-    margin:0;
-    padding:0;
-}
 .main{
     width: 100%;
     height:93vh;
     background-color: #191919;
+}
+
+.hidden{
+    display: none;
 }
 
 .community{
@@ -171,6 +171,7 @@
    }
 
 .cards{
+    background-color: #191919;
     margin-top: 10px;
     width: 100%;
     height: 75%;

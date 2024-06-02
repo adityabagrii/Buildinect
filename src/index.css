@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 *{
-    background-color: #191919;
+    /* background-color: #191919; */
+    overscroll-behavior: none;
 }

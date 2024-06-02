@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Card.css'
 const Card = ({imageSource, Heading, Text}) => {
     return (

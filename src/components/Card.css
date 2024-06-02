@@ -50,12 +50,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    transition: all 0.5s ease-in-out;
-    /* font-size: 0px; */
+    transition: all 0.5s smooth;
+    font-size: 0px;
 }
   
 .card:hover .second-content {
     opacity: 1;
     height: 100%;
-    /* font-size: 1rem; */
+    font-size: 1rem; 
 }

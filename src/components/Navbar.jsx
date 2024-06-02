@@ -1,7 +1,27 @@
 import React from 'react'
 import logo from '../assets/Logo.svg'
 import './Navbar.css'
-const Navbar = () => {
+
+const Navbar = ({login, setLogin, home, setHome, about, setAbout, signUp, setSignUp}) => {
+  const handleClick = () => {
+    setLogin(true)
+  }
+  const handleHome = () => {
+    setHome(true)
+    setAbout(false)
+    setSignUp(false)
+  }
+  const handleAbout = () => {
+    setHome(false)
+    setAbout(true)
+    setSignUp(false)
+  }
+  const handleSignUp = () => {
+    setHome(false)
+    setAbout(false)
+    setSignUp(true)
+  }
+
   return (
     <div className="Nav">
       <div className="logo">
@@ -10,11 +30,10 @@ const Navbar = () => {
       </div>
       <div className="options">
           <ul>
-          <li><button>Home</button></li>
-          <li><button>About</button></li>
-          <li><button>Contact</button></li>
-          <li><button>Log In</button></li>
-          <li><button className="signUp">Sign Up</button></li>
+          <li><button onClick={handleHome}>Home</button></li>
+          <li><button onClick={handleAbout}>About</button></li>
+          <li><button onClick={handleClick}>Log In</button></li>
+          <li><button className="signUp" onClick={handleSignUp}>Sign Up</button></li>
         </ul>
       </div>
     </div>
